@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #e5e7eb;
+    padding: 8px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.coat-of-arms {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-text h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 2px;
+    letter-spacing: 0.5px;
+}
+
+.logo-text p {
+    font-size: 13px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.logo-right {
+    text-align: right;
+}
+
+.evisa-text {
+    font-size: 28px;
+    font-weight: 800;
+    color: #1e40af;
+    display: block;
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+}
+
+.evisa-logo p {
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./image/heroimage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    position: relative;
+}
+
+.hero-overlay {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Main Content */
+.main-content {
+    padding: 30px 0 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.home-icon {
+    color: #3b82f6;
+    font-size: 16px;
+}
+
+.separator {
+    color: #9ca3af;
+}
+
+/* Search Result */
+.search-result {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5e7eb;
+}
+
+.search-header {
+    background-color: #003061;
+    color: white;
+    padding: 18px 25px;
+}
+
+.search-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Result Card */
+.result-card {
+    display: flex;
+    padding: 35px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.profile-section {
+    flex-shrink: 0;
+    position: relative;
+}
+
+.profile-image {
+    position: relative;
+}
+
+.profile-image img {
+    width: 140px;
+    height: 150px;
+    object-fit: cover;  
+}
+
+.approved-badge {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #059669;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(255, 254, 254, 0.2);
+}
+
+/* Details Section */
+.details-section {
+    flex: 1;
+}
+
+.valid-badge {
+    background-color: #374151;
+    color: white;
+    padding: 3px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.document-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.detail-row {
+    display: flex;
+    gap: 60px;
+}
+
+.detail-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail-item.empty {
+    visibility: hidden;
+}
+
+.label {
+    font-size: 13px;
+    color: #6b7280;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.value {
+    font-size: 15px;
+    color: #1f2937;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* Floating Button */
+.floating-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #3b82f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.floating-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.5);
+}
+
+.support-icon {
+    color: white;
+    font-size: 24px;
+}
+
+/* Footer */
+.footer {
+    background-color:#003061;
+    color: white;
+    padding: 6px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.footer p {
+    text-align: absolute;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .logo-left {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        padding: 0 20px;
+    }
+
+    .result-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profile-image img {
+        width: 120px;
+        height: 160px;
+    }
+
+    .floating-button {
+        width: 50px;
+        height: 50px;
+        bottom: 80px;
+        right: 20px;
+    }
+
+    .support-icon {
+        font-size: 20px;
+    }
+
+    .main-content {
+        padding-bottom: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .result-card {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .search-header {
+        padding: 15px 20px;
+    }
+
+    .logo-text h1 {
+        font-size: 16px;
+    }
+
+    .evisa-text {
+        font-size: 24px;
+    }
+}
